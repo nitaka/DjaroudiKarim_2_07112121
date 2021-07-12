@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+		<link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,21 +24,95 @@
 <body>
 			<!-- Header -->
 	<header>
+		<img src="images/logo/Reservia.svg" alt="logo reservia"/>
 		<nav>
 			<ul>
-				<li></li>
-				<li></li>
-				<li></li>
+				<li>Hébergements</li>
+				<li>Activités</li>
+				<li>S'inscrire</li>
 			</ul>
 		</nav>
 	</header>
-	
-			<!-- Section 1 -->
-	<section id="section_one">
-	</section>
 
-			<!-- Section 2 Description -->
+		<!-- intro recherche  -->
+	<div class="search">
+		<h2>Trouver votre hébergement pour des vacances de rêve</h2><br/>
+		<p>En plein centre ville ou en pleine nature</p><br/>
+		
+		<!-- Barre de recherche-->
+
+	<div class="search__bar">	
+		<i class="fas fa-map-marker-alt"></i>
+		<input type="search" name="search" placeholder="Marseille, France"/>
+		<button>Rechercher</button>
+	</div><br/>
+		
+	</div>
+			<!-- Section 1 filtre -->
+	<section id="filter">
+		<label>Filtres </label>
+		<nav>
+			<ul>
+				<li><i class="fas fa-money-bill-wave"></i>Économique</li>
+				<li><i class="fas fa-child"></i>Familiale</li>
+				<li><i class="fas fa-heart"></i>Romantique</li>
+				<li><i class="fas fa-dog"></i>Animaux autorisés</li>
+			</ul>
+		</nav>
+	</section><br/>
+
+	<i class="fas fa-info">Plus de 500 logements sont disponibles dans cette ville</i>
+
+			<!-- Section 2 Selection logement -->
 	<section id="description">
+		<article class="font_choice">
+			<h2>Hébergement à Marseille</h2>
+			
+			<figure class="logement">
+				<a href="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"><img class="logement_img" alt="logement" src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"/></a>
+				<div class="logement_txt">
+						<figcaption>Auberge de la Cannebiére</figcaption>
+						<p >Nuit à partir de <b>25€</b></p>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="far fa-star"></i>
+				</div>	
+			</figure>
+			<figure class="logement">
+				<a href="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg"><img class="logement_img" alt="logement" src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg"/></a>
+				<div class="logement_txt">
+						<figcaption>Hôtel du port</figcaption>
+						<p >Nuit à partir de 52<b>€</b></p>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>	
+				</div>	
+			</figure>
+			<figure class="logement">
+				<a href="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"><img class="logement_img" alt="logement" src="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"/></a>
+				<div class="logement_txt">
+						<figcaption>Hôtel les mouettes</figcaption>
+						<p >Nuit à partir de 76<b>€</b></p>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="far fa-star"></i>
+				</div>	
+			</figure>
+			
+		</article>
+		<aside>
+			<h2>Les plus populaires</h2>
+
+		</aside>
+		
+
+
 	</section>
 
 			<!-- Section 3 Contenu mis en avant -->
