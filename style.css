@@ -1,19 +1,39 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
+		/*---------- Header ----------*/
+
+#logo{
+	position: fixe;
+	margin-right: auto;
+}
+
+.header{
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
 
 		/*---------- Nav bar ----------*/
 
-ul, li{
-	list-style-type: none;
+.header__nav__ul{
 	display: flex;
-	margin-right: 20px;
+	list-style-type: none;
+	
 }
+
+.header__nav__ul li{
+	margin-right: 20px;
+	
+}
+
 
 		/*---------- Police ----------*/
 body
 {
 	font-family : 'Raleway', sans-serif;
+	margin: 20px;
 }
 
 h2
@@ -27,33 +47,160 @@ figcaption{
 }
 
 
+		/*---------- Bar de recherche ----------*/
+
+.btn__search{
+	background-color: #0065FC;
+	color: white;
+	font-size: 0.8em;
+	font-weight: bold;
+	height: 35px;
+	width: 100px;
+	border-radius: 0 10px 10px 0;
+	border: #0065FC 0px ;
+	position: relative;
+	right: 9px;
+}
+
+.search__bar{
+	height: 35px;
+	border: #F2F2F2 solid 1px;
+	position: relative;
+	right: 5px;
+	text-align: left;
+}
+
+.block__search{
+	height: 35px;
+	width: 35px;
+	border-radius: 10px 0px 0px 10px;
+	background-color: #F2F2F2;
+	display: inline-block;
+	position: relative;
+	bottom: 6px;
+}
+
+#btn__geo{
+	position: relative;
+	top: 8px;
+	left: 12px;
+}
+
+
+
 		/*---------- Filtre selection logement ----------*/
 
-#filter
-{
-	display: flex;
 
+.block__filter{
+	width: 100%;
+	display: flex;
+}
+
+.block__filter__nav ul{
+	display: flex;
+	list-style-type: none;
+	position: relative;
+	right: 35px;
+}
+
+.block__filter__nav ul li{
+	border: 2px solid #F2F2F2;
+	border-radius: 20px;
+	width: auto;
+	text-align: right;
+	padding: 10px 20px 10px 30px;
+	font-weight: bold;
+	font-size: 0.9em;
+	
+}
+
+
+.flt{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	color: #0065FC;
+	background-color: #DEEBFF;
+	border-radius: 100%;
+	height: 40px;
+	width: 40px;
+	position: relative;
+	left: 25px;
+}
+
+		/*---------- Boutton info / txt-info----------*/
+
+.block__info{
+	display: flex;
+}
+
+.fa-info{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	color: #0065FC;
+	font-size: 0.8em;
+	border: 2px solid #F2F2F2;
+	border-radius: 100%;
+	height: 20px;
+	width: 20px;
+}
+
+.fa-info+ p{
+	position: relative;
+	left: 10px;
+	bottom: 12px;
 }
 
 
 		/*---------- Section selection logement ----------*/
 
-.font_choice{
-	background-color: #F2F2F2;
-	border-radius: 20px;
-	width: 60%;
-	padding: 30px;
+#block__logement{
+	display: flex;
 }
 
-.logement{
+
+.logement__article1{
+	background-color: #F2F2F2;
+	border-radius: 20px;
+	width: 55%;
+	padding: 30px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.logement__article2{ 
+	background-color: #F2F2F2;
+	border-radius: 20px;
+	width: 25%;
+	padding: 30px;
+	margin-left: 5%;
+}
+
+.logement{  
 	background-color: white;
-	width: 245px;
+	width: 250px;
 	height: 230px;
 	border-radius: 20px;
 }
 
-figure{
+
+
+.logement2{
+	background-color: white;
+	width: 100%;
+	height: 140px;
+	border-radius: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+	display: flex;
+	align-items: center;
 }
+
+
 
 .logement_img{
 
@@ -67,8 +214,66 @@ figure{
 	
 }
 
+.logement_img2{
+
+	width: 135px;
+	height: 125px;
+	border-radius: 20px 0px 0px 20px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	margin-bottom: 7px;
+	
+}
+
 .logement_txt {
 	margin-left: 14px;
 	margin-top: 10px;
 }
+
+ 		/*---------- Section Aside ----------*/
+
+
+.block{
+
+	display: flex;
+	justify-content: space-between;
+	
+
+}
+
+.block__aside1, .block__aside4{
+	
+	border-radius: 20px;
+	box-shadow: 7px 7px 7px #f8f8f8;
+
+	
+}
+
+
+.block__aside2, .block__aside3, .block__aside5, .block__aside6{
+
+	border-radius: 20px;
+	box-shadow: 7px 7px 7px #f8f8f8;
+	height: 25%;
+}
+
+.block__aside__img--a{
+
+	width: 300px;
+	height: 390px;
+	border-radius: 20px 20px 0  0 ;
+}
+
+.block__aside__img{
+
+	width: 300px;
+	height: 180px;
+	border-radius: 20px 20px 0  0 ;
+	
+}
+
+
+
+		/*---------- footer ----------*/
 

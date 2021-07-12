@@ -1,32 +1,28 @@
 <!DOCTYPE html>
 <html>
-<head>
-		<link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
-		<meta charset="utf-8">
-		<title>Recréer la structure en HTML</title>
-		<meta name="description" content="Page description. No longer than 155 characters." />
+	<head>
+			<link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+			<link rel="stylesheet" type="text/css" href="style.css">
+			<meta charset="utf-8">
+			<title>Recréer la structure en HTML</title>
+			
+			<!-- Twitter Card data -->
+			<meta name="twitter:card" value="summary">
 
-		<!-- Twitter Card data -->
-		<meta name="twitter:card" value="summary">
-
-		<!-- Open Graph data -->
-		<meta property="og:title" content="Title Here" />
-		<meta property="og:type" content="website" />
-		<meta property="og:url" content="http://www.example.com/" />
-		<meta property="og:image" content="http://example.com/image.jpg" />
-		<meta property="og:description" content="Description Here" />
-	
-</head>
+			<!-- Open Graph data -->
+			<meta property="og:title" content="Title Here" />
+			<meta property="og:type" content="website" />
+			<meta property="og:url" content="http://www.example.com/" />
+			<meta property="og:image" content="http://example.com/image.jpg" />
+			<meta property="og:description" content="Description Here" />
+		
+	</head>
 <body>
 			<!-- Header -->
-	<header>
-		<img src="images/logo/Reservia.svg" alt="logo reservia"/>
-		<nav>
-			<ul>
+	<header class="header">
+		<img src="images/logo/Reservia.svg" alt="logo reservia" id="logo"/>
+		<nav class="header__nav">
+			<ul class="header__nav__ul">
 				<li>Hébergements</li>
 				<li>Activités</li>
 				<li>S'inscrire</li>
@@ -36,37 +32,41 @@
 
 		<!-- intro recherche  -->
 	<div class="search">
-		<h2>Trouver votre hébergement pour des vacances de rêve</h2><br/>
+		<h2>Trouver votre hébergement pour des vacances de rêve</h2>
 		<p>En plein centre ville ou en pleine nature</p><br/>
 		
 		<!-- Barre de recherche-->
 
-	<div class="search__bar">	
-		<i class="fas fa-map-marker-alt"></i>
-		<input type="search" name="search" placeholder="Marseille, France"/>
-		<button>Rechercher</button>
-	</div><br/>
+		<div>	
+			<div class="block__search">
+				<i class="fas fa-map-marker-alt" id="btn__geo"></i>
+			</div>
+			<input type="search" name="search" value="  Marseille, France" class="search__bar"/>
+			<button class="btn__search">Rechercher</button>
+		</div><br/>
 		
 	</div>
-			<!-- Section 1 filtre -->
-	<section id="filter">
-		<label>Filtres </label>
-		<nav>
+			<!--  filtre -->
+	<div class="block__filter">
+		<h4>Filtres</h4>
+		<nav class="block__filter__nav">
 			<ul>
-				<li><i class="fas fa-money-bill-wave"></i>Économique</li>
-				<li><i class="fas fa-child"></i>Familiale</li>
-				<li><i class="fas fa-heart"></i>Romantique</li>
-				<li><i class="fas fa-dog"></i>Animaux autorisés</li>
+				<i class="fas fa-money-bill-wave flt"></i><li>Économique</li>
+				<i class="fas fa-child flt"></i><li>Familiale</li>
+				<i class="fas fa-heart flt"></i><li>Romantique</li>
+				<i class="fas fa-dog flt"></i><li>Animaux autorisés</li>
 			</ul>
 		</nav>
-	</section><br/>
-
-	<i class="fas fa-info">Plus de 500 logements sont disponibles dans cette ville</i>
+	</div><br/>
+			<!-- boutton info / txt-info -->
+	<div class="block__info">
+		<i class="fas fa-info"></i><p>Plus de 500 logements sont disponibles dans cette ville</p>
+	</div>
 
 			<!-- Section 2 Selection logement -->
-	<section id="description">
-		<article class="font_choice">
-			<h2>Hébergement à Marseille</h2>
+	<section id="block__logement">
+		<article class="logement__article1">
+			<h2 class="heb">Hébergement à Marseille</h2>
 			
 			<figure class="logement">
 				<a href="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"><img class="logement_img" alt="logement" src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"/></a>
@@ -92,6 +92,7 @@
 						<i class="fas fa-star"></i>	
 				</div>	
 			</figure>
+
 			<figure class="logement">
 				<a href="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"><img class="logement_img" alt="logement" src="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"/></a>
 				<div class="logement_txt">
@@ -104,11 +105,85 @@
 						<i class="far fa-star"></i>
 				</div>	
 			</figure>
-			
+			<figure class="logement">
+				<a href="images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"><img class="logement_img" alt="logement" src="images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"/></a>
+				<div class="logement_txt">
+						<figcaption>Hôtel de la mer</figcaption>
+						<p >Nuit à partir de 46<b>€</b></p>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="far fa-star"></i>
+						<i class="far fa-star"></i>
+				</div>	
+			</figure>
+			<figure class="logement">
+				<a href="images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"><img class="logement_img" alt="logement" src="images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"/></a>
+				<div class="logement_txt">
+						<figcaption>Auberge le panier</figcaption>
+						<p >Nuit à partir de <b>23€</b></p>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="far fa-star"></i>
+				</div>	
+			</figure>
+			<figure class="logement">
+				<a href="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"><img class="logement_img" alt="logement" src="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"/></a>
+				<div class="logement_txt">
+						<figcaption>Hôtel chez Amina</figcaption>
+						<p >Nuit à partir de 96<b>€</b></p>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+				</div>	
+			</figure>
+			<h3><a href="#">Afficher plus</a></h3>
 		</article>
-		<aside>
-			<h2>Les plus populaires</h2>
 
+		<!-- ------------------Aside---------------- -->
+		<aside class="logement__article2">
+			<h2>Les plus populaires</h2><i class="fas fa-chart-line"></i>
+
+			<figure class="logement2">
+				<a href="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"><img class="logement_img2" alt="logement" src="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"/></a>
+				<div class="logement_txt">
+						<figcaption>Hôtel chez Amina</figcaption>
+						<p >Nuit à partir de 96<b>€</b></p>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+				</div>	
+			</figure>
+			<figure class="logement2">
+				<a href="images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg"><img class="logement_img2" alt="logement" src="images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg"/></a>
+				<div class="logement_txt">
+						<figcaption>Hôtel chez Amina</figcaption>
+						<p >Nuit à partir de 96<b>€</b></p>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+				</div>	
+			</figure>
+			<figure class="logement2">
+				<a href="images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg"><img class="logement_img2" alt="logement" src="images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg"/></a>
+				<div class="logement_txt">
+						<figcaption>Hôtel chez Amina</figcaption>
+						<p >Nuit à partir de 96<b>€</b></p>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+				</div>	
+			</figure>
 		</aside>
 		
 
@@ -116,28 +191,80 @@
 	</section>
 
 			<!-- Section 3 Contenu mis en avant -->
+		
 	<section id="featured_content">
+		<h2>Activités à Marseille</h2>
+
+	<article class="block">
+			<figure class="block__aside1">
+				<a href="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"><img class="block__aside__img--a" alt="logement" src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"/></a>
+				<div class="logement_txt">
+						<figcaption>Vieux port</figcaption>
+				</div>	
+			</figure>
+			<figure class="block__aside2">
+				<a href="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"><img class="block__aside__img" alt="logement" src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"/></a>
+				<div class="logement_txt">
+						<figcaption>Fort de pomègues</figcaption>
+				</div>	
+			</figure>
+			<figure class="block__aside3">
+				<a href="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"><img class="block__aside__img" alt="logement" src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"/></a>
+				<div class="logement_txt">
+						<figcaption>Îles du Frioul</figcaption>
+				</div>	
+			</figure>
+			<figure class="block__aside4">
+				<a href="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"><img class="block__aside__img--a" alt="logement" src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"/></a>
+				<div class="logement_txt">
+						<figcaption>Parc National des Calanques</figcaption>
+				</div>	
+			</figure>
+			<figure class="block__aside5">
+				<a href="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"><img class="block__aside__img" alt="logement" src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"/></a>
+				<div class="logement_txt">
+						<figcaption>Notre-Dame-de-la-Garde</figcaption>
+				</div>	
+			</figure>
+			<figure class="block__aside6">
+				<a href="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg"><img class="block__aside__img" alt="logement" src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg"/></a>
+				<div class="logement_txt">
+						<figcaption>Parc Longchamp</figcaption>
+				</div>	
+			</figure>
+
+	</article>
 	</section>
 
-			<!-- Section 4 Details -->
-	<section id="details">
-	</section>
-
-
-			<!-- Section 5 Big picture -->
-	<section id="big_picture">
-	</section>
-
-			<!-- Section 6 A propos -->
-	<section id="about">
-	</section>
-
-
-			<!-- Section 7 Gammes de prix  -->
-	<section id="price_ranges">
-	</section>
-	
 	<footer>
+		<div class="footer">
+			<h3>A propos</h3>
+			<nav>
+				<ul>
+					<li>Fonctionnement du site</li>
+					<li>Conditions générales de vente</li>
+					<li>Données confidentialité</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="footer">
+			<h3>Nos hébérgements</h3>
+			<nav>
+				<ul>
+					<li>Charte qualité</li>
+					<li>Soumettre votre hôtel</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="footer">
+			<h3>Assistance</h3>
+			<nav>
+				<ul>
+					<li>Centre d'aide</li>
+					<li>Nous contacter</li>
+				</ul>
+			</nav>
+		</div>	
 	</footer>
 
 </body>
