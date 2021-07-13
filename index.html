@@ -25,7 +25,7 @@
 			<ul class="header__nav__ul">
 				<li>Hébergements</li>
 				<li>Activités</li>
-				<li>S'inscrire</li>
+				<li class="login">S'inscrire</li>
 			</ul>
 		</nav>
 	</header>
@@ -59,13 +59,15 @@
 		</nav>
 	</div><br/>
 			<!-- boutton info / txt-info -->
+
 	<div class="block__info">
 		<i class="fas fa-info"></i><p>Plus de 500 logements sont disponibles dans cette ville</p>
 	</div>
 
 			<!-- Section 2 Selection logement -->
-	<section id="block__logement">
-		<article class="logement__article1">
+
+	<section class="block__logement">
+		<article class="block__logement__article">
 			<h2 class="heb">Hébergement à Marseille</h2>
 			
 			<figure class="logement">
@@ -145,8 +147,12 @@
 		</article>
 
 		<!-- ------------------Aside---------------- -->
-		<aside class="logement__article2">
-			<h2>Les plus populaires</h2><i class="fas fa-chart-line"></i>
+		
+		<aside class="block__logement__aside">
+			<div class="block__graph">
+				<h2>Les plus populaires</h2><i class="fas fa-chart-line"></i>
+			</div>
+			
 
 			<figure class="logement2">
 				<a href="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"><img class="logement_img2" alt="logement" src="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"/></a>
@@ -185,49 +191,46 @@
 				</div>	
 			</figure>
 		</aside>
-		
-
-
 	</section>
 
 			<!-- Section 3 Contenu mis en avant -->
 		
-	<section id="featured_content">
+	<section id="block__activiter">
 		<h2>Activités à Marseille</h2>
 
-	<article class="block">
-			<figure class="block__aside1">
-				<a href="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"><img class="block__aside__img--a" alt="logement" src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"/></a>
+	<article class="block__activiter__article">
+			<figure class="block__activiter__fig1">
+				<a href="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"><img class="block__activiter__img--a" alt="activiter" src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"/></a>
 				<div class="logement_txt">
 						<figcaption>Vieux port</figcaption>
 				</div>	
 			</figure>
-			<figure class="block__aside2">
-				<a href="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"><img class="block__aside__img" alt="logement" src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"/></a>
+			<figure class="block__activiter__fig2">
+				<a href="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"><img class="block__activiter__img" alt="activiter" src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"/></a>
 				<div class="logement_txt">
 						<figcaption>Fort de pomègues</figcaption>
 				</div>	
 			</figure>
-			<figure class="block__aside3">
-				<a href="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"><img class="block__aside__img" alt="logement" src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"/></a>
+			<figure class="block__activiter__fig3">
+				<a href="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"><img class="block__activiter__img3" alt="activiter" src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"/></a>
 				<div class="logement_txt">
 						<figcaption>Îles du Frioul</figcaption>
 				</div>	
 			</figure>
-			<figure class="block__aside4">
-				<a href="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"><img class="block__aside__img--a" alt="logement" src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"/></a>
+			<figure class="block__activiter__fig4">
+				<a href="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"><img class="block__activiter__img--a" alt="activiter" src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"/></a>
 				<div class="logement_txt">
 						<figcaption>Parc National des Calanques</figcaption>
 				</div>	
 			</figure>
-			<figure class="block__aside5">
-				<a href="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"><img class="block__aside__img" alt="logement" src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"/></a>
+			<figure class="block__activiter__fig5">
+				<a href="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"><img class="block__activiter__img" alt="activiter" src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"/></a>
 				<div class="logement_txt">
 						<figcaption>Notre-Dame-de-la-Garde</figcaption>
 				</div>	
 			</figure>
-			<figure class="block__aside6">
-				<a href="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg"><img class="block__aside__img" alt="logement" src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg"/></a>
+			<figure class="block__activiter__fig6">
+				<a href="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg"><img class="block__activiter__img" alt="activiter" src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg"/></a>
 				<div class="logement_txt">
 						<figcaption>Parc Longchamp</figcaption>
 				</div>	

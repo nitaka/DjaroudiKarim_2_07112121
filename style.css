@@ -19,31 +19,44 @@
 
 .header__nav__ul{
 	display: flex;
-	list-style-type: none;
-	
 }
 
 .header__nav__ul li{
 	margin-right: 20px;
-	
 }
 
+.header__nav__ul li:hover{
+	font-size: 1.1em;
+	color: #0065FC;
+	text-decoration: solid overline #0065FC;
+	height: 100%;
+}
+.login{
+	font-weight: bold;
+	color: #0065FC;
+}
 
 		/*---------- Police ----------*/
-body
-{
+body{
 	font-family : 'Raleway', sans-serif;
 	margin: 20px;
 }
 
-h2
-{
+ul li{
+	list-style-type: none;
+}
+
+h2{
 	font-weight: bold;
 	font-size: medium;
 }
 
 figcaption{
 	font-weight: bold;
+}
+a, a:visited{
+	text-decoration: none;
+	color: black;
 }
 
 
@@ -98,7 +111,6 @@ figcaption{
 
 .block__filter__nav ul{
 	display: flex;
-	list-style-type: none;
 	position: relative;
 	right: 35px;
 }
@@ -157,36 +169,76 @@ figcaption{
 
 		/*---------- Section selection logement ----------*/
 
-#block__logement{
+
+
+.block__logement{
 	display: flex;
+	height: 720px;
 }
 
+.block__logement__article h2{
+	display: block;
+	width: 100%;
+}
 
-.logement__article1{
+.block__logement__article{
 	background-color: #F2F2F2;
 	border-radius: 20px;
-	width: 55%;
 	padding: 30px;
 	display: flex;
 	flex-wrap: wrap;
-}
-
-.logement__article2{ 
-	background-color: #F2F2F2;
-	border-radius: 20px;
-	width: 25%;
-	padding: 30px;
-	margin-left: 5%;
+	min-width: 830px;
+	max-width: 830px;
 }
 
 .logement{  
 	background-color: white;
-	width: 250px;
+	width: 240px;
 	height: 230px;
 	border-radius: 20px;
+	padding: 5px 0 0 0;
+	margin-left: -5px;
+	position: relative;
+	left: 20px;
 }
 
 
+.logement_img{
+
+	width: 95%;
+	height: 115px;
+	border-radius: 20px 20px 0 0;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	
+}
+
+
+.logement_txt {
+	margin-left: 14px;
+	margin-top: 10px;
+}
+
+ 		/*---------- Section Aside ----------*/
+
+.block__graph{
+	display: flex;
+}
+
+.fa-chart-line{
+	position: relative;
+	left: 150px;
+	top: 12px;
+}
+.block__logement__aside{ 
+	background-color: #F2F2F2;
+	border-radius: 20px;
+	width: 350px;
+	min-width: 350px;
+	padding: 30px;
+	margin-left: 3%;
+}
 
 .logement2{
 	background-color: white;
@@ -195,23 +247,9 @@ figcaption{
 	border-radius: 20px;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 5px;
+	padding: 5px ;
 	display: flex;
 	align-items: center;
-}
-
-
-
-.logement_img{
-
-	width: 235px;
-	height: 115px;
-	border-radius: 20px 20px 0 0;
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-	margin-bottom: 7px;
-	
 }
 
 .logement_img2{
@@ -226,54 +264,98 @@ figcaption{
 	
 }
 
-.logement_txt {
-	margin-left: 14px;
-	margin-top: 10px;
+
+/*--------------- Activités-------------------*/
+
+#block__activiter h2{
+	display: block;
+	width: 100%;
 }
-
- 		/*---------- Section Aside ----------*/
-
-
-.block{
-
+#block__activiter{
 	display: flex;
-	justify-content: space-between;
-	
-
+	flex-wrap: wrap;
+	width: 1350px;
+	margin-top: 40px;
 }
 
-.block__aside1, .block__aside4{
+.block__activiter__article{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	height: 470px;
+	position: relative;
+	right: 35px;
+	
+}
+
+.block__activiter__fig1, .block__activiter__fig4{
+	border-radius: 20px;
+	box-shadow: 7px 7px 7px #f8f8f8;
+	margin-right: 0px;
+	height: 460px;
+}
+
+
+.block__activiter__fig2, .block__activiter__fig5, .block__activiter__fig6{
 	
 	border-radius: 20px;
 	box-shadow: 7px 7px 7px #f8f8f8;
-
-	
+	height: 195px;
+	margin-right: 0px;
 }
-
-
-.block__aside2, .block__aside3, .block__aside5, .block__aside6{
-
+.block__activiter__fig3{
 	border-radius: 20px;
 	box-shadow: 7px 7px 7px #f8f8f8;
-	height: 25%;
+	height: 195px;
+	margin-right: 0px;
 }
 
-.block__aside__img--a{
+.block__activiter__img3{
+	width: 300px;
+	height: 150px;
+	border-radius: 20px 20px 0  0 ;
+}
+
+.block__activiter__img--a{
 
 	width: 300px;
 	height: 390px;
 	border-radius: 20px 20px 0  0 ;
 }
 
-.block__aside__img{
+.block__activiter__img{
 
 	width: 300px;
-	height: 180px;
+	height: 150px;
 	border-radius: 20px 20px 0  0 ;
 	
 }
 
-
-
 		/*---------- footer ----------*/
+footer{
+	margin-top: 30px;
+	background-color: #f8f8f8;
+	display: flex;
+	justify-content: flex-start;
+	width: 1375px;
+	height: 200px;
+	position: relative;
+	right: 20px;
+	top: 20px;
+}
+.footer{
+	margin-top: 10px;
+	display: inline-block;
+	margin-right: 150px;
+}
 
+.footer nav ul li{
+	width: 250px;
+	position: relative;
+	right: 20px;
+	margin-bottom: 10px;
+}
+.footer h3{
+	position: relative;
+	left: 20px;
+}
