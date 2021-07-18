@@ -11,29 +11,30 @@
 <body>
 			<!-- Header -->
 	<header class="header">
-		<img src="images/logo/Reservia.svg" alt="logo reservia" id="logo"/>
-		<nav class="header__nav">
-			<ul class="header__nav__ul">
-				<li><a href="#block__logement">Hébergements</a></li>
-				<li><a href="#block__activiter">Activités</a> </li>
-			</ul>
-		</nav>
-		<a href="bla/bla/login.html" class="login">S'inscrire</a>
+		<nav id="divNavigation">
+            <div id="logo">
+               <a href="#"><img src="images/logo/Reservia.svg" alt="Logo de Reservia"/></a>
+            </div>
+            <a href="#" class="respBorder">Hébergements</a>
+            <a href="#" class="respBorder">Activités</a>
+            <a href="#" class="login">S'inscrire</a>
+         </nav>
 	</header>
 
 		<!-- intro recherche  -->
 	<div class="search">
-		<h2>Trouver votre hébergement pour des vacances de rêve</h2>
-		<p>En plein centre ville ou en pleine nature</p>
-		
+		<div class="search__text">
+			<h2>Trouver votre hébergement pour des vacances de rêve</h2>
+			<p>En plein centre ville ou en pleine nature</p>
+		</div>
 		<!-- Barre de recherche-->
 
-		<div>	
+		<div class="search__bar__block">	
 			<div class="block__search">
 				<i class="fas fa-map-marker-alt" id="btn__geo"></i>
 			</div>
 			<input type="search" name="search" value="  Marseille, France" class="search__bar"/>
-			<button class="btn__search">Rechercher</button>
+			<button class="btn__search"><p>Rechercher</p><i class="fas fa-search"></i></button>
 		</div>
 		
 	</div>
@@ -57,9 +58,9 @@
 
 			<!-- Section 2 Selection logement -->
 
-	<section class="block__logement">
+	<section class="block__logement" id="block__logement__ancre">
 		<article class="block__logement__article">
-			<h2 class="heb">Hébergement à Marseille</h2>
+			<h2>Hébergement à Marseille</h2>
 			<div class="align_article">
 				<figure class="logement">
 					<a href="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"><img class="logement_img" alt="logement" src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"/></a>
@@ -145,12 +146,8 @@
 		
 		<aside class="block__logement__aside">
 			
-
-			<div class="block__graph">
-				<h2>Les plus populaires</h2><i class="fas fa-chart-line"></i>
-			</div>
+				<h2 class="block__graph">Les plus populaires<i class="fas fa-chart-line"></i></h2>
 			
-
 			<figure class="logement2">
 				<a href="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"><img class="logement_img2" alt="logement" src="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"/></a>
 				<figcaption class="logement_txt"><b>Hôtel le soleil du matin</b>
@@ -190,9 +187,9 @@
 		</aside>
 	</section>
 
-			<!-- Section 3 Contenu mis en avant -->
+			<!-- Section Activité -->
 		
-	<section class="block__activiter">
+	<section class="block__activiter" id="block__activiter__ancre">
 		<h2>Activités à Marseille</h2>
 		<article class="block__activiter__article">
 				<figure class="block__activiter__fig1">
