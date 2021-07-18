@@ -3,48 +3,51 @@
 
 		/*---------- Header ----------*/
 
-#logo{
-	position: fixe;
-	margin-right: auto;
-}
-
-.header{
+header a {
+	flex-wrap: wrap;
+	padding: 2.4em 1.8em 2.4em 0em;
+	font-weight: 500;
+	}
+	
+	a {
+	color: inherit;
+	text-decoration: none;
+	}
+	
+	#divNavigation > a {
 	display: flex;
-	justify-content: flex-end;
-	margin-top: 30px;
-	margin-bottom: 30px;
-}
-
-		/*---------- Nav bar ----------*/
-
-.header__nav{
-	display: flex;
-}
-.header__nav__ul{
-	display: flex;
-}
-
-.header__nav__ul li{
-	padding-right: 50px;
-}
-
-.header__nav__ul li a:hover{
+	justify-content: center;
+	align-items: center;
+	border-top: 3px solid #ffffff00;
+	padding: 2.4em 1.8em 2.4em 1.8em;
+	}
+	
+	#divNavigation > a:hover {
+	border-top: 3px solid #0065FC;
 	color: #0065FC;
-	text-decoration: solid underline 3px #0065FC; 
-	text-underline-offset: -4em;
-}
-
-.login{
+	}
+	
+	#divNavigation {
+	padding: 0 5rem;
+	display: grid;
+	grid-template-columns: 70% auto auto auto;
+	margin-top: -9px;
+	}
+	
+	#logo {
+	margin-top: 2em;
+	margin-left: -85px;
+	}
+	
+	.login {
 	font-weight: bold;
 	color: #0065FC;
-	margin-top: 15px;
-}
-
-
+	}
+	
 		/*---------- Police ----------*/
 body{
 	font-family : 'Raleway', sans-serif;
-	margin: 20px;
+	margin-left: 20px;
 }
 
 ul li{
@@ -78,10 +81,6 @@ a, a:visited{
 	right: 9px;
 }
 
-.btn__search:hover, .search__bar:hover,#btn__geo:hover{
-	font-size: 0.9em;
-}
-
 .search__bar{
 	height: 35px;
 	border: #F2F2F2 solid 1px;
@@ -106,7 +105,9 @@ a, a:visited{
 	left: 12px;
 }
 
-
+.fa-search{
+	display: none;
+}
 
 		/*---------- Filtre selection logement ----------*/
 
@@ -255,14 +256,12 @@ a, a:visited{
 
  		/*---------- Section Aside ----------*/
 
-.block__graph{
-	display: flex;
-}
+
 
 .fa-chart-line{
-	margin-left: 60%;
+	margin-left: 93%;
 	position: relative;
-	top: 13px;
+	bottom: 18px; 
 }
 .block__logement__aside{ 
 	background-color: #F2F2F2;
@@ -338,14 +337,14 @@ a, a:visited{
 	box-shadow: 7px 7px 7px #f8f8f8;
 	height: 195px;
 	margin-right: 0px;
-	width: 25%;
+	width: 24%;
 }
 .block__activiter__fig3{
 	border-radius: 20px;
 	box-shadow: 7px 7px 7px #f8f8f8;
 	height: 195px;
 	margin-right: 0px;
-	width: 25%;
+	width: 24%;
 }
 
 .block__activiter__img3{
@@ -370,7 +369,7 @@ a, a:visited{
 		/*---------- footer ----------*/
 footer{
 	margin-top: 30px;
-	padding-right: 40px;
+	padding-right: 2.2em;
 	background-color: #f8f8f8;
 	display: flex;
 	justify-content: flex-start;
@@ -399,54 +398,285 @@ footer{
 }
 
 
+
+
+
+
 /*---------- Responsive ----------*/
 
-@media only screen and (max-width: 1324px){
+
+
+@media only screen and (max-width : 1320px){
+
+	body{
+		margin: 0px;
+		width: auto;
+	}
 
 	/*---------- Header ----------*/
-	#logo{
-		position: fixe;
-		margin-right: auto;
-	}
+	
 
-	.header{
-		display: block;
-		margin-top: 30px;
-		margin-bottom: 30px;
-	}
-
-	.login{
-		font-weight: bold;
+	header a { 
+		padding-left: 2.4em;
+	 }
+		
+	 #logo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+	 }
+		
+	 #divNavigation {
+		grid-template-columns: auto auto;
+		grid-template-rows: auto auto;
+		padding: 0;
+	 }
+		
+	 .login {
+		grid-area: 1/2;
+		position: relative;
+		left: 30px;
+		top: 15px;
+	 } 
+		
+	 #divNavigation > a:hover {
+		border-top: none;
+	 }
+		
+	 .respBorder {
+		border-bottom: 3px solid #d9d9d9;
+	 }
+		
+	 .respBorder:hover {
+		border-top: none;
+		border-bottom: 3px solid #0065FC;
 		color: #0065FC;
-		position: absolute;
-		top: 30px;
-		right: 10px;
-			
+	 }
+
+	/*---------- Fin Header ----------*/
+	/*---------- Bar de recherche ----------*/
+
+	.btn__search{
+		height: 55px;
+		width: 4em;
+		border-radius: 15px 15px 15px 15px;
+		position: relative;
+		right: 27px;
+		top: 1px
 	}
 
-		/*---------- Nav bar ----------*/
 
-
-
-	.header__nav__ul li{
+	.search__bar{
+		font-size: 0.9em;
+		text-align: center;
+		border: none;
+		height: 50px;
+		border: #F2F2F2 solid 1px;
+	}
+	.search__bar__block{
+		font-size: 1.2em;
+		text-align: center;
 		width: 100%;
-		padding: 5;
-		text-decoration: solid underline 3px rgb(255, 80, 80) !important;
-		text-underline-offset: 0.8em;
+		
+	}
+
+	#btn__geo{
+		position: relative;
+		top: 13px;
+		left: 0px;
+		font-size: 1.1em;
+	}
+
+	.search__text{
+		margin-left: 20px;
+	}
+
+	.btn__search p{
+		display: none;
+	}
+	
+	.block__search{
+		height: 50px;
+		width: 55px;
+		border-radius: 15px 0px 0px 15px;
+		position: relative;
+		bottom: 13px;
+	}
+
+	.fa-search{
+		display: block;
 		font-size: 1.3em;
 	}
 
+/*---------- Filtre selection logement ----------*/
 
+	.block__filter{
+		display: inline-block;
+		margin-left: 1em;
+		font-size: 1em;
+		font-weight: bold;
+		width: 91%;
+	}
 
-	.header__nav__ul li a:hover{
-		color: #0065FC;
-		text-decoration: solid underline 3px #0065FC; 
-		text-underline-offset: 0.8em;
+	.block__filter__nav ul{
+		flex-wrap: wrap;
+		height: 50px;
+		margin-left: -1.9em;
+		
+	}
+
+	.block__filter__nav ul li{
+		margin-right: 1.2em;
+		margin-bottom: 1em;
+		height: 25px;
 	}
 
 
+	.flt{
+		height: 50px;
+		width: 50px;
+	}
 
 
+	/*----boutton info / txt-info----*/ 
+
+	.block__info{
+		margin-top: 8.5em;
+		margin-left: 20px;
+	}
+
+	/*---------- Section selection logement ----------*/
+
+	.block__logement{
+		flex-direction: column-reverse;
+		margin-top: 102em;
+		margin-left: 0px;
+		width: 90%;
+
+	}
+	
+	.block__logement__article h2{
+		font-size: 1.3em;
+		margin-left: 20px;
+		margin-top: 40px;
+	}
+	
+	.block__logement__article{
+		background-color: white;
+		padding: 0px;
+		display: flex;
+		flex-direction: column;
+		flex-wrap:wrap;
+		width: 91%;
+	}
+	
+	.align_article{
+		flex-direction: column;
+		width: 100%;
+	}
+	
+	.logement{  
+		box-shadow: 7px 7px 7px #f8f8f8;
+		width: 20em;
+	}
+	
+	h3 a{
+		margin-left: 20px;
+	}
+
+			/*---------- Section Aside ----------*/
+
+	.block__graph{
+		display: flex;
+		white-space: nowrap;
+		font-size: 1.2em;
+		text-align: left;
+	}
+
+	.fa-chart-line{
+		margin-left: 30%;
+		font-size: 1.3em;
+		position: relative;
+		top: 0px;
+	}
+	.block__logement__aside{ 
+		border-radius: 0px;
+		width: 93%;
+		margin-left: 0;
+	}
+
+
+		/*--------------- Activités-------------------*/
+
+	.block__activiter{
+		width: 90%;
+		margin-left: 20px;
+		margin-bottom:40px ;
+	}
+
+	.block__activiter h2{
+		
+		font-size: 1.4em;
+		margin-left: 0px;
+
+	}
+
+
+	.block__activiter__article{
+		display: block;
+		height: auto;
+		width: 95%;
+		margin-top: 30px;
+		
+	}
+
+
+	.block__activiter__fig1, .block__activiter__fig2, .block__activiter__fig3,.block__activiter__fig4,.block__activiter__fig5,.block__activiter__fig6{
+		border-radius: 20px;
+		box-shadow: 7px 7px 7px #f8f8f8;
+		height: 200px;
+		width: 100%;
+		margin-top: 30px;
+
+	}
+	
+	.block__activiter__img,.block__activiter__img3,.block__activiter__img--a{
+		width: 100%;
+		height: 150px;
+		border-radius: 20px 20px 0  0 ;
+	}
+
+
+			/*---------- footer ----------*/
+
+	footer{
+		width: 90%;
+		padding-top: 20px;
+	}
+
+	footer, .footer{
+		margin-left: 20px;
+		display: block;
+		height: auto;
+		
+	}
+
+	.footer nav ul{
+	padding-bottom: 20px;
+	width: 90%;
+	}
+
+	.footer nav ul li{
+		width: auto;
+		position: relative;
+		right: 39px;
+		margin-bottom: 10px;	
+	}
+	.footer h3{
+		position: relative;
+		left: 0px;
+	}
 
 
 
