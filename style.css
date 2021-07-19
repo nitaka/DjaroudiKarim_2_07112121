@@ -1,50 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
-		/*---------- Header ----------*/
-
-header a {
-	flex-wrap: wrap;
-	padding: 2.4em 1.8em 2.4em 0em;
-	font-weight: 500;
-	}
-	
-	a {
-	color: inherit;
-	text-decoration: none;
-	}
-	
-	#divNavigation > a {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-top: 3px solid #ffffff00;
-	padding: 2.4em 1.8em 2.4em 1.8em;
-	}
-	
-	#divNavigation > a:hover {
-	border-top: 3px solid #0065FC;
-	color: #0065FC;
-	}
-	
-	#divNavigation {
-	padding: 0 5rem;
-	display: grid;
-	grid-template-columns: 70% auto auto auto;
-	margin-top: -9px;
-	}
-	
-	#logo {
-	margin-top: 2em;
-	margin-left: -85px;
-	}
-	
-	.login {
-	font-weight: bold;
-	color: #0065FC;
-	}
-	
-		/*---------- Police ----------*/
+/*---------- Police ----------*/
 body{
 	font-family : 'Raleway', sans-serif;
 	margin-left: 20px;
@@ -59,13 +16,56 @@ h2{
 	font-size: medium;
 }
 
-
 a, a:visited{
 	text-decoration: none;
 	color: black;
 }
+		
+		/*---------- Police fin----------*/
+		/*---------- Header ----------*/
 
+header a {
+	flex-wrap: wrap;
+	padding: 2.4em 1.8em 2.4em 0em;
+	font-weight: 500;
+}
 
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+#block__nav > a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top: 3px solid #ffffff00;
+	padding: 2.4em 1.8em 2.4em 1.8em;
+}
+
+#block__nav > a:hover {
+	border-top: 3px solid #0065FC;
+	color: #0065FC;
+}
+
+#block__nav {
+	padding: 0 5rem;
+	display: grid;
+	grid-template-columns: 70% auto auto auto;
+	margin-top: -9px;
+}
+
+#logo {
+	margin-top: 2em;
+	margin-left: -85px;
+}
+
+.login {
+	font-weight: bold;
+	color: #0065FC !important;
+}
+
+		/*---------- Header fin ----------*/
 		/*---------- Bar de recherche ----------*/
 
 .btn__search{
@@ -79,6 +79,7 @@ a, a:visited{
 	border: #0065FC 0px ;
 	position: relative;
 	right: 9px;
+	top: 4px;
 }
 
 .search__bar{
@@ -87,6 +88,11 @@ a, a:visited{
 	position: relative;
 	right: 5px;
 	text-align: left;
+}
+
+button p{
+	position: relative;
+	bottom: 3px;
 }
 
 .block__search{
@@ -107,7 +113,7 @@ a, a:visited{
 
 .fa-search{
 	display: none;
-}
+}		/*---------- Bar de recherche fin ----------*/
 
 		/*---------- Filtre selection logement ----------*/
 
@@ -126,7 +132,6 @@ a, a:visited{
 
 .block__filter__nav ul{
 	display: flex;
-
 }
 
 .block__filter__nav ul li{
@@ -140,9 +145,7 @@ a, a:visited{
 	margin-right: 30px;
 	font-weight: bold;
 	font-size: 0.9em;
-	
 }
-
 
 .flt{
 	display: flex;
@@ -158,7 +161,7 @@ a, a:visited{
 	right: 10px;
 	bottom: 12px;
 }
-
+		/*---------- Filtre selection logement fin ----------*/
 		/*---------- Boutton info / txt-info----------*/
 
 .block__info{
@@ -185,10 +188,8 @@ a, a:visited{
 	bottom: 12px;
 }
 
-
+		/*---------- Boutton info / txt-info fin----------*/
 		/*---------- Section selection logement ----------*/
-
-
 
 .block__logement{
 	height: 650px;
@@ -225,18 +226,14 @@ a, a:visited{
 	left: 20px;
 }
 
-
 .logement_img{
-
 	width: 95%;
 	height: 105px;
 	border-radius: 20px 20px 0 0;
 	display: block;
     margin-left: auto;
-    margin-right: auto;
-	
+    margin-right: auto;	
 }
-
 
 .logement_txt{
 	margin-top: 12px;
@@ -244,7 +241,6 @@ a, a:visited{
 }
 
 .logement_txt p i{
-
 	line-height: 2.5em;
 }
 
@@ -253,16 +249,15 @@ a, a:visited{
 	font-size: 0.9em;
 }
 
-
+		/*---------- Section selection logement fin ----------*/
  		/*---------- Section Aside ----------*/
-
-
 
 .fa-chart-line{
 	margin-left: 93%;
 	position: relative;
 	bottom: 18px; 
 }
+
 .block__logement__aside{ 
 	background-color: #F2F2F2;
 	border-radius: 20px;
@@ -285,7 +280,6 @@ a, a:visited{
 }
 
 .logement_img2{
-
 	width: 135px;
 	height: 140px;
 	border-radius: 20px 0px 0px 20px;
@@ -293,11 +287,9 @@ a, a:visited{
     margin-left: auto;
     margin-right: auto;
 	margin-bottom: 7px;
-	
 }
-
-
-/*--------------- Activités-------------------*/
+		/*---------- Section Aside fin----------*/
+		/*----------- Activités------------*/
 
 #block__activiter{
 	display: flex;
@@ -319,7 +311,6 @@ a, a:visited{
 	height: 470px;
 	width: 93%;
 	margin-left: -40px;
-	
 }
 
 .block__activiter__fig1, .block__activiter__fig4{
@@ -332,7 +323,6 @@ a, a:visited{
 
 
 .block__activiter__fig2, .block__activiter__fig5, .block__activiter__fig6{
-	
 	border-radius: 20px;
 	box-shadow: 7px 7px 7px #f8f8f8;
 	height: 195px;
@@ -363,9 +353,8 @@ a, a:visited{
 	width: 100%;
 	height: 150px;
 	border-radius: 20px 20px 0  0 ;
-	
 }
-
+		/*----------- Activités fin------------*/
 		/*---------- footer ----------*/
 footer{
 	margin-top: 30px;
@@ -396,12 +385,7 @@ footer{
 	position: relative;
 	left: 20px;
 }
-
-
-
-
-
-
+/*---------- Footer fin----------*/
 /*---------- Responsive ----------*/
 
 
@@ -415,40 +399,44 @@ footer{
 
 	/*---------- Header ----------*/
 	
+	header{
+		margin-top: -40px;
+	}
 
 	header a { 
-		padding-left: 2.4em;
+		
+		padding: 2em 1em 0em 1.5em;
 	 }
 		
 	 #logo {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		
 	 }
 		
-	 #divNavigation {
+	 #block__nav {
 		grid-template-columns: auto auto;
 		grid-template-rows: auto auto;
 		padding: 0;
+		padding-bottom: -80px;
 	 }
 		
 	 .login {
 		grid-area: 1/2;
 		position: relative;
 		left: 30px;
-		top: 15px;
+		top: 30px;
 	 } 
 		
-	 #divNavigation > a:hover {
+	 #block__nav > a:hover {
 		border-top: none;
 	 }
 		
-	 .respBorder {
+	 .block__nav__border {
 		border-bottom: 3px solid #d9d9d9;
 	 }
 		
-	 .respBorder:hover {
+	 .block__nav__border:hover {
 		border-top: none;
 		border-bottom: 3px solid #0065FC;
 		color: #0065FC;
@@ -458,41 +446,51 @@ footer{
 	/*---------- Bar de recherche ----------*/
 
 	.btn__search{
-		height: 55px;
-		width: 4em;
+		height: 52px;
+		width: 3.7em;
 		border-radius: 15px 15px 15px 15px;
 		position: relative;
 		right: 27px;
 		top: 1px
 	}
 
-
 	.search__bar{
 		font-size: 0.9em;
-		text-align: center;
-		border: none;
+		border: 2px solid #F2F2F2;
 		height: 50px;
-		border: #F2F2F2 solid 1px;
+		font-weight: bold;
+		width: 60%;
 	}
+
 	.search__bar__block{
 		font-size: 1.2em;
 		text-align: center;
-		width: 100%;
-		
+		width: auto;
+		margin-left: 15px;
 	}
 
 	#btn__geo{
 		position: relative;
 		top: 13px;
 		left: 0px;
-		font-size: 1.1em;
+		font-size: 1em;
+	}
+	
+	.fa-search{
+			display: block;
+			font-size: 1.3em;
 	}
 
 	.search__text{
 		margin-left: 20px;
+		margin-top: 30px;
 	}
 
-	.btn__search p{
+	.search__text h2{
+		font-size: 1.5em;
+	}
+
+	.btn__search span{
 		display: none;
 	}
 	
@@ -504,11 +502,8 @@ footer{
 		bottom: 13px;
 	}
 
-	.fa-search{
-		display: block;
-		font-size: 1.3em;
-	}
-
+	
+/*---------- Bar de recherche fin ----------*/
 /*---------- Filtre selection logement ----------*/
 
 	.block__filter{
@@ -523,7 +518,6 @@ footer{
 		flex-wrap: wrap;
 		height: 50px;
 		margin-left: -1.9em;
-		
 	}
 
 	.block__filter__nav ul li{
@@ -538,22 +532,22 @@ footer{
 		width: 50px;
 	}
 
-
-	/*----boutton info / txt-info----*/ 
+/*---------- Filtre selection logement  fin----------*/
+/*----boutton info / txt-info----*/ 
 
 	.block__info{
 		margin-top: 8.5em;
 		margin-left: 20px;
 	}
 
-	/*---------- Section selection logement ----------*/
+/*----boutton info / txt-info fin----*/
+/*---------- Section selection logement ----------*/
 
 	.block__logement{
 		flex-direction: column-reverse;
 		margin-top: 102em;
 		margin-left: 0px;
 		width: 90%;
-
 	}
 	
 	.block__logement__article h2{
@@ -565,9 +559,6 @@ footer{
 	.block__logement__article{
 		background-color: white;
 		padding: 0px;
-		display: flex;
-		flex-direction: column;
-		flex-wrap:wrap;
 		width: 91%;
 	}
 	
@@ -584,8 +575,9 @@ footer{
 	h3 a{
 		margin-left: 20px;
 	}
+/*---------- Section selection logement fin----------*/
 
-			/*---------- Section Aside ----------*/
+/*---------- Section Aside ----------*/
 
 	.block__graph{
 		display: flex;
@@ -595,19 +587,20 @@ footer{
 	}
 
 	.fa-chart-line{
-		margin-left: 30%;
+		margin-left: 35%;
 		font-size: 1.3em;
 		position: relative;
 		top: 0px;
 	}
+
 	.block__logement__aside{ 
 		border-radius: 0px;
 		width: 93%;
-		margin-left: 0;
+		margin: 0;
 	}
 
-
-		/*--------------- Activités-------------------*/
+/*---------- Section Aside fin ----------*/
+/*--------------- Activités-------------------*/		
 
 	.block__activiter{
 		width: 90%;
@@ -616,10 +609,8 @@ footer{
 	}
 
 	.block__activiter h2{
-		
 		font-size: 1.4em;
 		margin-left: 0px;
-
 	}
 
 
@@ -628,38 +619,32 @@ footer{
 		height: auto;
 		width: 95%;
 		margin-top: 30px;
-		
 	}
 
 
 	.block__activiter__fig1, .block__activiter__fig2, .block__activiter__fig3,.block__activiter__fig4,.block__activiter__fig5,.block__activiter__fig6{
-		border-radius: 20px;
-		box-shadow: 7px 7px 7px #f8f8f8;
 		height: 200px;
 		width: 100%;
 		margin-top: 30px;
-
 	}
 	
 	.block__activiter__img,.block__activiter__img3,.block__activiter__img--a{
 		width: 100%;
 		height: 150px;
-		border-radius: 20px 20px 0  0 ;
 	}
 
-
-			/*---------- footer ----------*/
+/*--------------- Activités fin-------------------*/
+/*---------- footer ----------*/
 
 	footer{
-		width: 90%;
+		width: 91%;
 		padding-top: 20px;
 	}
 
 	footer, .footer{
 		margin-left: 20px;
 		display: block;
-		height: auto;
-		
+		height: auto;	
 	}
 
 	.footer nav ul{
@@ -669,17 +654,12 @@ footer{
 
 	.footer nav ul li{
 		width: auto;
-		position: relative;
 		right: 39px;
-		margin-bottom: 10px;	
 	}
 	.footer h3{
-		position: relative;
 		left: 0px;
 	}
 
-
-
-
+/*---------- footer fin ----------*/
 }
 	
