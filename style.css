@@ -4,6 +4,7 @@
 /*---------- Police ----------*/
 body{
 	font-family : 'Raleway', sans-serif;
+	width: auto;
 	margin-left: 20px;
 }
 
@@ -57,7 +58,7 @@ a {
 
 #logo {
 	margin-top: 2em;
-	margin-left: -85px;
+	margin-left: -75px;
 }
 
 .login {
@@ -68,23 +69,27 @@ a {
 		/*---------- Header fin ----------*/
 		/*---------- Bar de recherche ----------*/
 
+.search{
+	margin-left: 15px;
+}
+
 .btn__search{
 	background-color: #0065FC;
 	color: white;
 	font-size: 0.8em;
 	font-weight: bold;
-	height: 35px;
+	height: 40px;
 	width: 100px;
 	border-radius: 0 10px 10px 0;
 	border: #0065FC 0px ;
 	position: relative;
-	right: 9px;
-	top: 4px;
+	right: 15px;
 }
 
 .search__bar{
-	height: 35px;
+	height: 40px;
 	border: #F2F2F2 solid 1px;
+	font-weight: bold;
 	position: relative;
 	right: 5px;
 	text-align: left;
@@ -96,19 +101,19 @@ button p{
 }
 
 .block__search{
-	height: 35px;
-	width: 35px;
+	height: 40px;
+	width: 40px;
 	border-radius: 10px 0px 0px 10px;
 	background-color: #F2F2F2;
 	display: inline-block;
 	position: relative;
-	bottom: 6px;
+	bottom: 10px;
 }
 
 #btn__geo{
 	position: relative;
-	top: 8px;
-	left: 12px;
+	top: 10px;
+	left: 15px;
 }
 
 .fa-search{
@@ -119,13 +124,16 @@ button p{
 
 
 .block__filter{
-	width: 100%;
+	width: 80%;
 	display: flex;
 	margin-top: 10px;
+	margin-left: 15px;
+	transform: scale(1);
 }
 
 .block__filter__nav ul li:hover{
-	font-size: 1em;
+	transform: scale(1.2);
+	transition: transform 1.5s;
 	background-color: #0065FC;
 	color: white;
 }
@@ -167,6 +175,7 @@ button p{
 .block__info{
 	display: flex;
 	margin-top: 10px;
+	margin-left: 10px;
 }
 
 .fa-info{
@@ -199,7 +208,8 @@ button p{
 
 .block__logement__article h2{
 	display: block;
-	width: 100%;
+	width: auto;
+	margin-left: 25px;
 }
 
 .block__logement__article{
@@ -207,7 +217,7 @@ button p{
 	border-radius: 20px;
 	padding: 30px;
 	flex-wrap: wrap;
-	width: 75%;
+	width: 80%;
 }
 
 .align_article{
@@ -217,8 +227,8 @@ button p{
 
 .logement{  
 	background-color: white;
-	width: 240px;
-	height: 210px;
+	width: 270px;
+	height: 215px;
 	border-radius: 20px;
 	padding: 5px 0 0 0;
 	margin-left: -5px;
@@ -249,13 +259,24 @@ button p{
 	font-size: 0.9em;
 }
 
+h3 a{
+	margin-left: 25px;
+}
+
 		/*---------- Section selection logement fin ----------*/
  		/*---------- Section Aside ----------*/
 
 .fa-chart-line{
-	margin-left: 93%;
+	font-size: 1.2rem;
 	position: relative;
-	bottom: 18px; 
+	top: 12px;
+}
+
+.block__graph{
+	display: flex;
+	justify-content:space-between;
+	margin-left: 7px;
+	margin-right: 7px;
 }
 
 .block__logement__aside{ 
@@ -263,7 +284,7 @@ button p{
 	border-radius: 20px;
 	width: 25%;
 	padding: 30px;
-	margin-left: 3%;
+	margin-left: 20px;
 }
 
 .logement2{
@@ -290,82 +311,107 @@ button p{
 }
 		/*---------- Section Aside fin----------*/
 		/*----------- Activités------------*/
+#block__activite { 
+	display: grid;
+	grid-template-columns: repeat(4 ,1fr);
+	grid-template-rows: repeat(1, 1fr);
+	gap: 3rem;
+	margin-bottom: 4rem;
+	font-weight: bold;
+}
 
-#block__activiter{
+.title__act{
+	font-weight: bold;
+	margin-top: 50px;
+}
+
+.part_1--act {
+	border-radius: 30px;
+	box-shadow: 2px 3px 21px 5px rgba(0,0,0,0.2);
+}
+
+.cell1, .cell2, .cell3, .cell4 {
+	box-shadow: 2px 3px 21px 5px rgba(0,0,0,0.2);
+	border-radius: 1.5rem;
+}
+
+.part_2--act {
+	display: grid;
+	grid-template-columns: repeat(1 ,1fr);
+	grid-template-rows: 2fr;
+	height: 100%;  
+	gap: 2rem;
+}
+
+.part_3--act {
+	display: grid;
+	grid-template-columns: repeat(1 ,1fr);
+	grid-template-rows: 2fr;
+	height: 100%; 
+	gap: 2rem; 
+}
+
+.img2__act {
+	object-fit: cover;
+	object-position: center;
+	height: 25em;
+	width: 100%;
+	max-width: 100%;
+	max-height: 100%;
+	border-top-left-radius: 1.2rem;
+	border-top-right-radius: 1.2rem;
+}
+
+.img3__act {
+	object-fit: cover;
+	object-position: center;
+	height: 11em;
+	width: 100%;
+	max-width: 100%;
+	max-height: 100%;
+	border-top-left-radius: 1.2rem;
+	border-top-right-radius: 1.2rem;
+}
+
+.img4__act {
+	object-fit: cover;
+	object-position: center;
+	height: 8em;
+	width: 100%;
+	max-width: 100%;
+	max-height: 100%;
+	border-top-left-radius: 1.2rem;
+	border-top-right-radius: 1.2rem;
+}
+
+.link__act p {
+	margin-top: 0.5em;
+	padding-right: 2em;
+}
+
+.txt__act {
+	margin-top: 0.5em;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+h3 {
 	display: flex;
-	flex-wrap: wrap;
-	width: 100%;
-	margin-top: 40px;
-}
-
-#block__activiter h2{
-	display: block;
-	width: 100%;
+	align-items: center;
 }
 
 
-.block__activiter__article{
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	height: 470px;
-	width: 93%;
-	margin-left: -40px;
-}
-
-.block__activiter__fig1, .block__activiter__fig4{
-	border-radius: 20px;
-	box-shadow: 7px 7px 7px #f8f8f8;
-	margin-right: 0px;
-	height: 460px;
-	width: 25%;
-}
-
-
-.block__activiter__fig2, .block__activiter__fig5, .block__activiter__fig6{
-	border-radius: 20px;
-	box-shadow: 7px 7px 7px #f8f8f8;
-	height: 195px;
-	margin-right: 0px;
-	width: 24%;
-}
-.block__activiter__fig3{
-	border-radius: 20px;
-	box-shadow: 7px 7px 7px #f8f8f8;
-	height: 195px;
-	margin-right: 0px;
-	width: 24%;
-}
-
-.block__activiter__img3{
-	width: 100%;
-	height: 150px;
-	border-radius: 20px 20px 0  0 ;
-}
-
-.block__activiter__img--a{
-	width: 100%;
-	height: 390px;
-	border-radius: 20px 20px 0  0 ;
-}
-
-.block__activiter__img{
-	width: 100%;
-	height: 150px;
-	border-radius: 20px 20px 0  0 ;
-}
 		/*----------- Activités fin------------*/
 		/*---------- footer ----------*/
 footer{
 	margin-top: 30px;
-	padding-right: 2.2em;
+	margin-right: -8px;
+	margin-left: -20px;
 	background-color: #f8f8f8;
 	display: flex;
 	justify-content: flex-start;
-	width: 100%;
 	height: 200px;
 	position: relative;
-	right: 20px;
 	top: 20px;
 }
 
@@ -376,14 +422,13 @@ footer{
 }
 
 .footer nav ul li{
-	width: 50%;
+	width: 70%;
 	position: relative;
 	right: 20px;
 	margin-bottom: 10px;
 }
 .footer h3{
-	position: relative;
-	left: 20px;
+	margin-left: 20px;
 }
 /*---------- Footer fin----------*/
 /*---------- Responsive ----------*/
@@ -602,35 +647,25 @@ footer{
 /*---------- Section Aside fin ----------*/
 /*--------------- Activités-------------------*/		
 
-	.block__activiter{
-		width: 90%;
-		margin-left: 20px;
-		margin-bottom:40px ;
-	}
-
-	.block__activiter h2{
-		font-size: 1.4em;
-		margin-left: 0px;
-	}
-
-
-	.block__activiter__article{
-		display: block;
-		height: auto;
-		width: 95%;
-		margin-top: 30px;
-	}
-
-
-	.block__activiter__fig1, .block__activiter__fig2, .block__activiter__fig3,.block__activiter__fig4,.block__activiter__fig5,.block__activiter__fig6{
-		height: 200px;
-		width: 100%;
-		margin-top: 30px;
+	#block__activite {
+	grid-template-columns: repeat(2 ,1fr);
+	grid-template-rows: 6fr;
 	}
 	
-	.block__activiter__img,.block__activiter__img3,.block__activiter__img--a{
-		width: 100%;
-		height: 150px;
+	.section__activite {
+	margin: 0 1.5em 0 1.5em;
+	}
+	
+	.img4__act, .img3__act {
+	height: 10em;
+	}
+
+	.gridClassResult {
+	margin-top: 0;
+	}
+
+	.titleSearch {
+	padding-bottom: 1.5em;
 	}
 
 /*--------------- Activités fin-------------------*/
