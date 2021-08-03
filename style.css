@@ -452,15 +452,14 @@ h3 {
 	body{
 		margin: 0px;
 		width: auto;
-		min-width: 415px;
-
+		min-width: 450px;
 	}
 
 	/*---------- Header ----------*/
 	
 	header{
 		margin-top: -40px;
-		padding: 2.4em 0em 2.4em 0em;
+		padding: 1.4em 0em 2.4em 0em;
 	}
 
 	header a { 
@@ -476,7 +475,7 @@ h3 {
 	 }
 		
 	 .header__nav {
-		grid-template-columns: auto auto;
+		grid-template-columns: 50% 50%;
 		grid-template-rows: auto auto;
 		padding: 0;
 		padding-bottom: -80px;
@@ -654,7 +653,7 @@ h3 {
 		object-position: center;
 		margin-top: 1px;
 		height: 54%;
-		width: 98.5%;
+		width: 97%;
 	}
 	
 	h3 a{
@@ -671,11 +670,16 @@ h3 {
 		text-align: left;
 	}
 
+	.aside--title h2{
+		font-size: 1.1em;
+	}
+
 	.fa-chart-line{
-		margin-left: 35%;
-		font-size: 1.3em;
+		margin-left: 30%;
+		font-size: 1.2em;
+		font-weight: bold;
 		position: relative;
-		top: 0px;
+		top: 16px;
 	}
 
 	.aside{ 
@@ -685,11 +689,16 @@ h3 {
 		margin-right: 0px;
 	}
 
+
 /*---------- Section Aside fin ----------*/
 /*--------------- Activités-------------------*/		
 
 	.activite {
 		margin: 65em 1.5em 0 1.5em;
+	}
+
+	.activite h2{
+		font-size: 1.4em;
 	}
 
 	.activite__group{
@@ -729,7 +738,7 @@ h3 {
 		height: auto;
 		margin-left: 0px;
 		margin-right: 0px;
-		padding: 20px 0px 20px 0px;
+		padding: 10px 0px 20px 0px;
 	
 	}
 
@@ -741,17 +750,59 @@ h3 {
 
 
 /*---------- footer fin ----------*/
-/*---------- responsive Iphone----------*/
+/*---------- responsive Iphone 8 plus----------*/
+@media only screen and (max-width :414px){
+
+	body{
+		min-width: 414px;
+		max-width: 414px;
+	}
+
+	header{
+		width: 424px;
+	}
+
+	.aside{
+		width: 88%;
+	}
+
+	.footer{
+		width: 102.5%;
+	}
+
+}
+/*---------- responsive Iphone 8----------*/
 @media only screen and (max-width :375px){
 
-.aside{
-	width: 88%;
-}
+	body{
+		min-width: 375px;
+		max-width: 375px;
+		margin-left: 0px;
+	}
 
-.footer{
-	margin-right: -10px;
+	/* header*/
+		header{
+			width: 102.6%;
+		}
+	/* header fin*/
 
-}
+	/* aside */
+		.aside{
+			width: 86.6%;
+		}
+
+		.logement2{
+			width: 320px;
+		}
+	/* aside fin*/
+	
+
+	/* footer */
+		.footer{
+			width: 102.6%;
+			margin-left: 0px;
+		}
+	/* footer fin*/
 
 }
 
