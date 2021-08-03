@@ -36,7 +36,7 @@ a {
 	text-decoration: none;
 }
 
-#block__nav > a {
+.header__nav > a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -44,19 +44,19 @@ a {
 	padding: 2.4em 1.8em 2.4em 1.8em;
 }
 
-#block__nav > a:hover {
+.header__nav > a:hover {
 	border-top: 3px solid #0065FC;
 	color: #0065FC;
 }
 
-#block__nav {
+.header__nav{
 	padding: 0 5rem;
 	display: grid;
 	grid-template-columns: 70% auto auto auto;
 	margin-top: -9px;
 }
 
-#logo {
+.logo {
 	margin-top: 2em;
 	margin-left: -75px;
 }
@@ -73,7 +73,7 @@ a {
 	margin-left: 15px;
 }
 
-.btn__search{
+.search__bar--btn{
 	background-color: #0065FC;
 	color: white;
 	font-size: 0.8em;
@@ -86,7 +86,7 @@ a {
 	right: 15px;
 }
 
-.search__bar{
+.search__bar--input{
 	height: 40px;
 	border: #F2F2F2 solid 1px;
 	font-weight: bold;
@@ -100,7 +100,7 @@ button p{
 	bottom: 3px;
 }
 
-.block__search{
+.search__bar--logo{
 	height: 40px;
 	width: 40px;
 	border-radius: 10px 0px 0px 10px;
@@ -110,7 +110,7 @@ button p{
 	bottom: 10px;
 }
 
-#btn__geo{
+.fa-map-marker-alt{
 	position: relative;
 	top: 10px;
 	left: 15px;
@@ -123,7 +123,7 @@ button p{
 		/*---------- Filtre selection logement ----------*/
 
 
-.block__filter{
+.filter{
 	width: 80%;
 	display: flex;
 	margin-top: 10px;
@@ -131,18 +131,18 @@ button p{
 	transform: scale(1);
 }
 
-.block__filter__nav ul li:hover{
-	transform: scale(1.2);
-	transition: transform 1.5s;
+.filter__nav ul li:hover{
+	transform: scale(1.1);
+	transition: transform 1s;
 	background-color: #0065FC;
 	color: white;
 }
 
-.block__filter__nav ul{
+.filter__nav ul{
 	display: flex;
 }
 
-.block__filter__nav ul li{
+.filter__nav ul li{
 	display: flex;
 	border: 2px solid #F2F2F2;
 	border-radius: 20px;
@@ -172,7 +172,7 @@ button p{
 		/*---------- Filtre selection logement fin ----------*/
 		/*---------- Boutton info / txt-info----------*/
 
-.block__info{
+.info{
 	display: flex;
 	margin-top: 10px;
 	margin-left: 10px;
@@ -200,19 +200,19 @@ button p{
 		/*---------- Boutton info / txt-info fin----------*/
 		/*---------- Section selection logement ----------*/
 
-.block__logement{
+.hebergement{
 	height: 650px;
 	display: flex;
 	margin-top: 10px;
 }
 
-.block__logement__article h2{
+.hebergement__article h2{
 	display: block;
 	width: auto;
 	margin-left: 25px;
 }
 
-.block__logement__article{
+.hebergement__article{
 	background-color: #F2F2F2;
 	border-radius: 20px;
 	padding: 30px;
@@ -220,7 +220,7 @@ button p{
 	width: 80%;
 }
 
-.align_article{
+.hebergement__article--align{
 	display: flex;
 	justify-content: space-around;
 }
@@ -238,25 +238,29 @@ button p{
 
 .logement_img{
 	width: 95%;
-	height: 105px;
+	height: 110px;
 	border-radius: 20px 20px 0 0;
 	display: block;
     margin-left: auto;
     margin-right: auto;	
 }
 
-.logement_txt{
-	margin-top: 12px;
+.logement__txt{
+	margin-top: 10px;
 	margin-left: 20px;
 }
 
-.logement_txt p i{
+.logement__txt p i{
 	line-height: 2.5em;
 }
 
-.logement_txt p .fas{
+.logement__txt p .fas{
 	color: #0065FC;
 	font-size: 0.9em;
+}
+
+.star-grey{
+	color: #DEEBFF !important;
 }
 
 h3 a{
@@ -272,14 +276,14 @@ h3 a{
 	top: 12px;
 }
 
-.block__graph{
+.aside--title{
 	display: flex;
 	justify-content:space-between;
 	margin-left: 7px;
 	margin-right: 7px;
 }
 
-.block__logement__aside{ 
+.aside{ 
 	background-color: #F2F2F2;
 	border-radius: 20px;
 	width: 25%;
@@ -311,7 +315,12 @@ h3 a{
 }
 		/*---------- Section Aside fin----------*/
 		/*----------- Activités------------*/
-#block__activite { 
+
+.activite{
+	margin-top: 60px;
+}
+
+.activite__group { 
 	display: grid;
 	grid-template-columns: repeat(4 ,1fr);
 	grid-template-rows: repeat(1, 1fr);
@@ -320,22 +329,12 @@ h3 a{
 	font-weight: bold;
 }
 
-.title__act{
-	font-weight: bold;
-	margin-top: 50px;
-}
-
-.part_1--act {
+.activite__group--element1 {
 	border-radius: 30px;
 	box-shadow: 2px 3px 21px 5px rgba(0,0,0,0.2);
 }
 
-.cell1, .cell2, .cell3, .cell4 {
-	box-shadow: 2px 3px 21px 5px rgba(0,0,0,0.2);
-	border-radius: 1.5rem;
-}
-
-.part_2--act {
+.activite__group--element2 {
 	display: grid;
 	grid-template-columns: repeat(1 ,1fr);
 	grid-template-rows: 2fr;
@@ -343,7 +342,7 @@ h3 a{
 	gap: 2rem;
 }
 
-.part_3--act {
+.activite__group--element3 {
 	display: grid;
 	grid-template-columns: repeat(1 ,1fr);
 	grid-template-rows: 2fr;
@@ -351,7 +350,27 @@ h3 a{
 	gap: 2rem; 
 }
 
-.img2__act {
+.link--activite p {
+	margin-top: 0.5em;
+	padding-right: 2em;
+}
+
+.title--activite {
+	margin-top: 0.5em;
+	padding-left: 2em;
+	padding-right: 2em;
+	font-weight: bold;
+	margin-top: 50px;
+}
+
+.cell--activite1, .cell--activite2, .cell--activite3, .cell--activite4 {
+	box-shadow: 2px 3px 21px 5px rgba(0,0,0,0.2);
+	border-radius: 1.5rem;
+}
+
+
+
+.img2--activite {
 	object-fit: cover;
 	object-position: center;
 	height: 25em;
@@ -362,7 +381,7 @@ h3 a{
 	border-top-right-radius: 1.2rem;
 }
 
-.img3__act {
+.img3--activite {
 	object-fit: cover;
 	object-position: center;
 	height: 11em;
@@ -373,7 +392,7 @@ h3 a{
 	border-top-right-radius: 1.2rem;
 }
 
-.img4__act {
+.img4--activite {
 	object-fit: cover;
 	object-position: center;
 	height: 8em;
@@ -384,17 +403,6 @@ h3 a{
 	border-top-right-radius: 1.2rem;
 }
 
-.link__act p {
-	margin-top: 0.5em;
-	padding-right: 2em;
-}
-
-.txt__act {
-	margin-top: 0.5em;
-	padding-left: 2em;
-	padding-right: 2em;
-}
-
 h3 {
 	display: flex;
 	align-items: center;
@@ -403,34 +411,38 @@ h3 {
 
 		/*----------- Activités fin------------*/
 		/*---------- footer ----------*/
-footer{
-	margin-top: 30px;
-	margin-right: -8px;
-	margin-left: -20px;
-	background-color: #f8f8f8;
-	display: flex;
-	justify-content: flex-start;
-	height: 200px;
-	position: relative;
-	top: 20px;
-}
 
 .footer{
-	margin-top: 10px;
-	display: inline-block;
-	width: 100%;
+	height: 200px;
+	background-color: #f8f8f8;
+	margin-left: -15px;
+	margin-right: -8px;
+	display: flex;
+}
+
+.footer div{
+	margin-right: 20%;
 }
 
 .footer nav ul li{
-	width: 70%;
+	width: 100%;
 	position: relative;
-	right: 20px;
+	right: 15px;
 	margin-bottom: 10px;
 }
+
 .footer h3{
-	margin-left: 20px;
+	margin-left: 25px;
 }
+
+
 /*---------- Footer fin----------*/
+
+ 
+
+
+
+
 /*---------- Responsive ----------*/
 
 
@@ -440,12 +452,15 @@ footer{
 	body{
 		margin: 0px;
 		width: auto;
+		min-width: 415px;
+
 	}
 
 	/*---------- Header ----------*/
 	
 	header{
 		margin-top: -40px;
+		padding: 2.4em 0em 2.4em 0em;
 	}
 
 	header a { 
@@ -453,13 +468,14 @@ footer{
 		padding: 2em 1em 0em 1.5em;
 	 }
 		
-	 #logo {
+	 .logo {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		margin-right: -20px;
 	 }
 		
-	 #block__nav {
+	 .header__nav {
 		grid-template-columns: auto auto;
 		grid-template-rows: auto auto;
 		padding: 0;
@@ -468,20 +484,20 @@ footer{
 		
 	 .login {
 		grid-area: 1/2;
+		margin-left: 90px;
 		position: relative;
-		left: 30px;
 		top: 30px;
 	 } 
 		
-	 #block__nav > a:hover {
+	 .header__nav > a:hover {
 		border-top: none;
 	 }
 		
-	 .block__nav__border {
+	 .header__nav--border {
 		border-bottom: 3px solid #d9d9d9;
 	 }
 		
-	 .block__nav__border:hover {
+	 .header__nav--border:hover {
 		border-top: none;
 		border-bottom: 3px solid #0065FC;
 		color: #0065FC;
@@ -490,7 +506,7 @@ footer{
 	/*---------- Fin Header ----------*/
 	/*---------- Bar de recherche ----------*/
 
-	.btn__search{
+	.search__bar--btn{
 		height: 52px;
 		width: 3.7em;
 		border-radius: 15px 15px 15px 15px;
@@ -499,7 +515,8 @@ footer{
 		top: 1px
 	}
 
-	.search__bar{
+
+	.search__bar--input{
 		font-size: 0.9em;
 		border: 2px solid #F2F2F2;
 		height: 50px;
@@ -507,14 +524,14 @@ footer{
 		width: 60%;
 	}
 
-	.search__bar__block{
-		font-size: 1.2em;
+	.search__bar{
+		font-size: 1.1em;
 		text-align: center;
 		width: auto;
-		margin-left: 15px;
+		text-align: center;
 	}
 
-	#btn__geo{
+	.fa-map-marker-alt{
 		position: relative;
 		top: 13px;
 		left: 0px;
@@ -527,45 +544,47 @@ footer{
 	}
 
 	.search__text{
-		margin-left: 20px;
-		margin-top: 30px;
+		margin-top: -25px;
+		margin-bottom: 35px;
 	}
 
 	.search__text h2{
 		font-size: 1.5em;
 	}
 
-	.btn__search span{
+	.search__bar--btn span{
 		display: none;
 	}
 	
-	.block__search{
+	.search__bar--logo{
 		height: 50px;
 		width: 55px;
 		border-radius: 15px 0px 0px 15px;
 		position: relative;
 		bottom: 13px;
+		
 	}
 
 	
 /*---------- Bar de recherche fin ----------*/
 /*---------- Filtre selection logement ----------*/
 
-	.block__filter{
+	.filter{
 		display: inline-block;
 		margin-left: 1em;
 		font-size: 1em;
 		font-weight: bold;
 		width: 91%;
+		
 	}
 
-	.block__filter__nav ul{
+	.filter__nav ul{
 		flex-wrap: wrap;
 		height: 50px;
 		margin-left: -1.9em;
 	}
 
-	.block__filter__nav ul li{
+	.filter__nav ul li{
 		margin-right: 1.2em;
 		margin-bottom: 1em;
 		height: 25px;
@@ -580,7 +599,7 @@ footer{
 /*---------- Filtre selection logement  fin----------*/
 /*----boutton info / txt-info----*/ 
 
-	.block__info{
+	.info{
 		margin-top: 8.5em;
 		margin-left: 20px;
 	}
@@ -588,33 +607,54 @@ footer{
 /*----boutton info / txt-info fin----*/
 /*---------- Section selection logement ----------*/
 
-	.block__logement{
+	.hebergement{
 		flex-direction: column-reverse;
-		margin-top: 102em;
+		margin-top: 40em;
 		margin-left: 0px;
-		width: 90%;
 	}
-	
-	.block__logement__article h2{
+
+	.hebergement__article h2{
 		font-size: 1.3em;
 		margin-left: 20px;
 		margin-top: 40px;
 	}
 	
-	.block__logement__article{
+	.hebergement__article{
 		background-color: white;
 		padding: 0px;
-		width: 91%;
+		width: 100%;
+		max-width: 100%;
+		max-height: 100%;
 	}
 	
-	.align_article{
-		flex-direction: column;
-		width: 100%;
+	.hebergement__article--align{
+		display: grid;
+		grid-template-columns: repeat(1 ,1fr);
+		grid-template-rows: 6fr;
+		margin: 0 1em 0 1.5em;
 	}
 	
 	.logement{  
-		box-shadow: 7px 7px 7px #f8f8f8;
-		width: 20em;
+		box-shadow: 2px 3px 21px 5px rgba(0,0,0,0.2);
+		width: 100%;
+		position: relative;
+		left: 0;
+	}
+
+	figure {
+		display: block;
+		margin-block-start: 1em;
+		margin-block-end: 1em;
+		margin-inline-start: 40px;
+		margin-inline-end: 0px;
+	}
+	
+	.logement_img{
+		object-fit: cover;
+		object-position: center;
+		margin-top: 1px;
+		height: 54%;
+		width: 98.5%;
 	}
 	
 	h3 a{
@@ -624,7 +664,7 @@ footer{
 
 /*---------- Section Aside ----------*/
 
-	.block__graph{
+	.aside--title{
 		display: flex;
 		white-space: nowrap;
 		font-size: 1.2em;
@@ -638,63 +678,83 @@ footer{
 		top: 0px;
 	}
 
-	.block__logement__aside{ 
+	.aside{ 
 		border-radius: 0px;
-		width: 93%;
-		margin: 0;
+		width: auto;
+		margin-left: 0px ;
+		margin-right: 0px;
 	}
 
 /*---------- Section Aside fin ----------*/
 /*--------------- Activités-------------------*/		
 
-	#block__activite {
-	grid-template-columns: repeat(2 ,1fr);
-	grid-template-rows: 6fr;
+	.activite {
+		margin: 65em 1.5em 0 1.5em;
+	}
+
+	.activite__group{
+		grid-template-columns: repeat(1 ,1fr);
+		grid-template-rows: 6fr;
+		
 	}
 	
-	.section__activite {
-	margin: 0 1.5em 0 1.5em;
+	.activite__group--element1, .activite__group--element2, .activite__group--element3{
+		display: grid;
+		grid-template-columns: repeat(1 ,1fr);
+		grid-template-rows: 2fr;
+		height: 100%; 
+		gap: 2rem; 
 	}
+
 	
-	.img4__act, .img3__act {
-	height: 10em;
+	.img4--activite, .img3--activite, .img2--activite {
+		
+		height: 11em;
+		width: 100%;
+		max-width: 100%;
+		max-height: 100%;
+		border-top-left-radius: 1.2rem;
+		border-top-right-radius: 1.2rem;
 	}
 
-	.gridClassResult {
-	margin-top: 0;
-	}
 
-	.titleSearch {
-	padding-bottom: 1.5em;
-	}
-
+	
+	
+	
 /*--------------- Activités fin-------------------*/
 /*---------- footer ----------*/
 
-	footer{
-		width: 91%;
-		padding-top: 20px;
-	}
-
-	footer, .footer{
-		margin-left: 20px;
+	.footer{
 		display: block;
-		height: auto;	
+		height: auto;
+		margin-left: 0px;
+		margin-right: 0px;
+		padding: 20px 0px 20px 0px;
+	
 	}
 
-	.footer nav ul{
-	padding-bottom: 20px;
-	width: 90%;
+
+	
+	.footer div{
+		margin-top: 40px;
 	}
 
-	.footer nav ul li{
-		width: auto;
-		right: 39px;
-	}
-	.footer h3{
-		left: 0px;
-	}
 
 /*---------- footer fin ----------*/
+/*---------- responsive Iphone----------*/
+@media only screen and (max-width :375px){
+
+.aside{
+	width: 88%;
+}
+
+.footer{
+	margin-right: -10px;
+
+}
+
+}
+
+
 }
 	
