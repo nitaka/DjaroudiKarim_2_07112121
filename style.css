@@ -445,9 +445,44 @@ h3 {
 
 /*---------- Responsive ----------*/
 
+@media only screen and (max-width : 1375px){
+	
+	.header__nav{
+		grid-template-columns: 45% auto auto auto;
+		
+	}
 
+	.filter__nav ul{
+		flex-wrap: wrap;
+		height: 50px;
+		margin-left: -1.9em;
+		margin-bottom: 50px;
+	}
 
-@media only screen and (max-width : 1320px){
+	.filter__nav ul li{
+		margin-right: 1.2em;
+		margin-bottom: 1em;
+		height: 15px;
+	}
+
+	.hebergement{
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 45em;
+	}
+
+	.hebergement__article, .aside{
+		width: 93%;
+	}
+
+	.aside{
+		min-width: 200px;
+		margin-left: 0px;
+		margin-top: 30px;
+	}
+}
+
+@media only screen and (max-width : 820px){
 
 	body{
 		margin: 0px;
@@ -652,8 +687,12 @@ h3 {
 		object-fit: cover;
 		object-position: center;
 		margin-top: 1px;
-		height: 54%;
+		height: 60%;
 		width: 97%;
+	}
+
+	.logement__txt{
+		line-height: 0.8em;
 	}
 	
 	h3 a{
